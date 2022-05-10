@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Sidebar Menu</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <section>
+        <div class="menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgb(255, 255, 255)"
+            onclick="menu()"
+          >
+            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+          </svg>
+        </div>
+
+        <div class="search">
+          <i class="bx bx-search-alt-2 bx-sm" onclick="menu()"></i>
+          <input type="search" placeholder="Search..." />
+        </div>
+
+        <ul>
+          <li class="analytics">
+            <i class="bx bxs-doughnut-chart bx-sm"></i>
+            <p>Analytics</p>
+          </li>
+
+          <li class="user">
+            <i class="bx bx-user bx-sm"></i>
+            <p>User</p>
+          </li>
+
+          <li class="chat">
+            <i class="bx bx-conversation bx-sm"></i>
+            <p>Chat</p>
+          </li>
+
+          <li class="files">
+            <i class="bx bx-folder bx-sm"></i>
+            <p>Files</p>
+          </li>
+
+          <li class="store">
+            <i class="bx bx-store bx-sm"></i>
+            <p>Store</p>
+          </li>
+
+          <li class="favorites">
+            <i class="bx bx-heart bx-sm"></i>
+            <p>Favorites</p>
+          </li>
+
+          <li class="settings">
+            <i class="bx bx-cog bx-sm"></i>
+            <p>Settings</p>
+          </li>
+
+          <li class="logout">
+            <i class="bx bx-log-out-circle bx-sm"></i>
+            <p>Log Out</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <!-- <main>
+      <h2>Bem-Vindo(a)!</h2>
+    </main> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(242, 247, 248);
+}
+
+section {
+  padding: 5px;
+}
+
+/* sidebar inativa */
+
+.sidebar {
+  background-color: rgb(36, 34, 34);
+  width: 80px;
+  height: 100vh;
+  transition: all 0.5s ease;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 30px 0;
+  cursor: pointer;
+}
+
+.sidebar .search i {
+  color: white;
+}
+
+.sidebar .search i:hover {
+  color: black;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search input {
+  display: none;
+}
+
+.sidebar ul li {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 5.5px;
+}
+
+.sidebar i {
+  padding: 12px;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar i:hover {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+.sidebar p {
+  display: none;
+}
+
+.sidebar ul li:hover p {
+  display: flex;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 10px;
+  left: calc(10%);
+  background-color: #fff;
+}
+
+.sidebar .logout {
+  width: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+}
+
+.sidebar .logout:hover p {
+  left: calc(100% + 50%);
+  width: 80px;
+}
+
+/* sidebar ativa */
+
+.sidebar.active {
+  background-color: rgb(36, 34, 34);
+  width: 240px;
+  height: 100vh;
+}
+
+.sidebar.active .menu {
+  margin: 10px;
+  justify-content: end;
+}
+
+.sidebar.active .search {
+  display: flex;
+  background-color: rgb(45, 44, 44);
+  border-radius: 10px;
+  margin: 20px 5px;
+}
+
+.sidebar.active .search i {
+  color: white;
+}
+
+.sidebar.active .search i:hover {
+  background-color: transparent;
+}
+
+.sidebar.active .search input {
+  display: flex;
+  border: none;
+  padding: 0 10px;
+  background-color: transparent;
+  width: 90%;
+  outline: none;
+  color: white;
+}
+
+.sidebar.active ul li {
+  display: flex;
+  align-content: center;
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.sidebar.active ul li:hover {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+.sidebar.active p {
+  display: flex;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 14px;
+}
+
+.sidebar.active .logout {
+  position: absolute;
+  bottom: 0;
+  width: 180px;
+}
